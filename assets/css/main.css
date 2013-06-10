@@ -1,0 +1,197 @@
+::selection {
+  text-shadow: none;
+  background: #5CB3FF;
+  color: #fff;
+}
+::-moz-selection {
+  text-shadow: none;
+  background: #5CB3FF;
+  color: #fff;
+}
+@font-face {
+  font-family: 'Museo';
+  src: url('Museo.otf');
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background: url(http://designmoo.com/wp-content/uploads/2011/05/blueprint_preview.jpg);
+  font-family: 'Museo';
+}
+h3 {
+  color: #fff;
+  font-size: 2.9em;
+  font-weight: normal;
+  font-family: 'Museo';
+  padding: 10px;
+  margin: 0;
+  width: 100px;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+h3:hover {
+  -webkit-filter: blur(1px);
+}
+.mini {
+  font-size: 1.3em;
+  color: #fff;
+}
+canvas {
+  width: 560px;
+  height: 320px;
+  background: url("../img/photo.jpg") no-repeat center;
+
+  -webkit-border-radius: 15px;
+  -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+@keyframes blur {
+  0%{opacity: 1;}
+  50%{opacity: 0;}
+  100%{opacity: 1;}
+}
+.opts {
+  background: #fff;
+  padding: 5px;
+  margin: 0;
+  box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  width: 210px;
+  height: 190px;
+  float: right;
+  right: 500px;
+  position: relative;
+  line-height: 1.6em;
+  display: +flex;
+}
+a {
+  color: #111;
+  text-decoration: none;
+  
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  line-height: 19px;
+}
+a:hover {
+  color: #111;
+  text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.2);
+}
+ul li {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+.blurit {
+  -webkit-filter: blur(2.8px);
+}
+.grayit {
+  -webkit-filter: grayscale(0.9);
+}
+.sepiait{
+  -webkit-filter: sepia(0.5);
+}
+.hue {
+  -webkit-filter: hue-rotate(244deg);
+}
+.contra {
+  -webkit-filter: contrast(180%); 
+}
+.bright {
+  -webkit-filter: brightness(50%); 
+}
+.remove{
+  background: #9d0707;
+  padding: 14px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+  position: relative;
+  bottom: 45px;
+  left: 100px;
+}
+.remove:hover{
+  color: #fff;
+  box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.5);
+  text-shadow: 0px 6px 4px rgba(0, 0, 0, 0.5); 
+}
+
+footer{
+  background: #222;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  color: #666;
+  text-align: center;
+}
+.help {
+  background: #fff;
+  padding: 10px;
+  width: 400px;
+  right: 11px;
+  top: 10px;
+  position: absolute;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  
+  box-shadow:  0px 2px 1px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow:  0px 2px 1px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow:  0px 2px 1px rgba(0, 0, 0, 0.7);
+}
+h4 {
+  padding: 0;
+  margin: 0;
+  font-size: 1.4em;
+  border-bottom: 4px solid #497EFC;
+  width: 145px;
+}
+
+.help p{
+  line-height: 1.4em;
+}
+.help a {
+  color: #999;
+  text-decoration: underline;
+}
+.help a:hover {
+  color: #497efc;
+  text-shadow: none !important;
+}
+.fb {
+  color: #fff;
+  text-shadow: 0px 3px 12px rgba(0, 0, 0, 0.5) !important;
+}
+.fb:hover {
+  color: #3b5998;
+}
+.twit {
+  color: #fff;
+  text-shadow: 0px 3px 12px rgba(0, 0, 0, 0.5) !important; 
+}
+
+.twit:hover {
+  color: #2c77ba;
+}
+code {
+  display: inline-block;
+  background: #FFE5B4;
+}
+#click {
+  animation-duration: 3s;
+  animation-name: blur;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+}

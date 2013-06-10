@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Title block allowing child pages to override -->
+        <meta charset = "UTF-8">
+        <meta name = "description" content = "This is a small experiment using HTML5 canvas and CSS3 filters. Desktop view is recommended.">
+        <title>{% block title %}Filters | Raghav Kukreti{% endblock %}</title>
+        <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
+        <link rel = "stylesheet" href = "assets/css/main.min.css">
+        {% block styles %}{% endblock %}
+    </head>
+    <body>
+        <div id="wrapper">
+            <!-- Include -->
+            {% include "header" %}
+            <!-- Content block, child page inject content -->
+            {% block content %}{% endblock %}
+        </div>
+        
+        {% block scripts %}{% endblock %}
+    </body>
+</html>

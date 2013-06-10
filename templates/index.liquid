@@ -1,0 +1,53 @@
+{% block content %} 
+  <canvas></canvas>
+  <div class = "opts">
+    <ul>
+      <li><a href = "#" class = "blur">Blur</option></li>
+      <li><a class = "gray" href = "#">Gray</option></li>
+      <li><a href = "#" class = "sepia">Retro</a></li>
+      <li><a href = "#" class = "huechange">Change The Hue</a></li>
+      <li><a href = "#" class = "contrast">Higher Contrast</a></li>
+      <li><a href = "#" class = "brighter">Less Bright</a></li>
+      <li></li>
+    </ul>
+  
+
+  </div>  <a href="#" class = "remove">Remove Filters</a>
+  <div class = "help">
+    <h4>What is this?</h4>
+    <p>Hi there! Thanks for checking out this awesome experiment!</p>
+    <p>This implements <code>-webkit-filter:blur, sepia, grayscale,etc;</code></p>
+    <p>And a little bit of jQuery for removing and adding classes.</p>
+    <h4>Overview</h4>
+    <p>So as a web designer I need to be up to date with new features implemented in CSS3 and HTML5 and while procrastinating and lots of Facebook I found Net Tutplus's awesome <a href = "http://net.tutsplus.com/tutorials/html-css-techniques/say-hello-to-css3-filters/" target = "_blank">tutorial</a> on webkit filters. Well In my school, people are like mad over filters and it got me thinking why not create a webapp with all of this and provide it online and free of any ugly watermarks like that of Camwow's. This is just an experiment so you wouldn't be able to upload your own pics but I am doing it too with the FileSystem API and drag-drop interface. Test this bad boy and then mail me your comments. :) Enjoy! <a href="mailto:raghav.kukreti@gmail.com">raghav.kukreti@gmail.com</a></p>
+  </div>
+  <script src = "assets/scripts/jquery.js"></script>
+  <script>
+    $(".blur").click(function (){ 
+      $("canvas").addClass("blurit");
+    });
+    $(".gray").click(function(){
+      $("canvas").addClass("grayit");
+    });
+    $(".sepia").click(function() {
+      $("canvas").addClass("sepiait");
+    });
+    $(".huechange").click(function(){
+      $("canvas").addClass("hue");
+    });
+    $(".contrast").click(function(){
+      $("canvas").addClass("contra");
+    });
+    $(".brighter").click(function(){
+      $("canvas").addClass("bright");
+    });
+    $(".remove").click(function() {
+      $("canvas").removeClass();
+    });
+  </script>
+  <footer>
+    <p>Copyright and stuff &copy; Raghav Kukreti</p>
+    <p><a href="https://www.facebook.com/raghav.kukreti7?ref=tn_tnmn" class = "fb">Facebook</a>&nbsp;&nbsp;&nbsp;<a href="https://twitter.com/RaghavKukreti"  class = "twit">@RaghavKukreti</a></p>
+  </footer>
+</body>
+{% endblock %}
